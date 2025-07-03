@@ -30,18 +30,26 @@ It’s the modern fork of the original PIL (Python Imaging Library) and supports
 
 📂 2. How do you open and save images?
 Using Pillow:
+
 from PIL import Image
+
 img = Image.open("input.jpg")      # Open image
+
 img.save("output.png")             # Save image
 
 📏 3. What does resize() do?
 resize() changes the dimensions of an image to the size you specify:
+
 resized = img.resize((800, 800))  # Width x Height
+
 It returns a new resized image while keeping the original unchanged.
 
 📁 4. How do you loop through files in a folder? (os.listdir)
 Using the os module:
+
 import os
+
 for file in os.listdir("input_images"):
     print(file)
+
 This lists all files (and folders) inside input_images.
